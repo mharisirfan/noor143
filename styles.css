@@ -57,7 +57,8 @@ body {
     width: 150px; /* Adjust as needed */
     height: auto;
 }
-/* Default: Hide background image */
+
+
 body::before {
     content: "";
     position: fixed;
@@ -69,15 +70,7 @@ body::before {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0; /* Initially hidden */
-    z-index: -1; /* Keeps it in the background */
-    transition: opacity 0.5s ease-in-out;
-}
-
-/* Show background image ONLY on mobile (screens < 768px) */
-@media screen and (max-width: 768px) {
-    body::before {
-        opacity: 0.3; /* 🔹 Adjust for a faded overlay effect */
-    }
+    opacity: 0.3; /* 🔹 Adjust for visibility */
+    z-index: -1; /* Keeps it behind everything */
 }
 
