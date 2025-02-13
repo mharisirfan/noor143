@@ -49,3 +49,11 @@ body {
     border-radius: 10px;
     margin-top: 20px;
   }
+.bottom-image {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px; /* Adjust as needed */
+    height: auto;
+}
